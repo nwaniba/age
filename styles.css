@@ -15,6 +15,13 @@ button{
     height: 40px;   
 }
  #txtDisplay{
-    padding: 70px;
+    padding: 20px;
     width: 70%;
+}
+h3{
+    text-decoration: solid 10px;
+}
+input{
+    padding: 10px;
+    width: 50%;
 }
