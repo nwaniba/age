@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-5">
+            <h3>Discover years left to live</h3>
+            <p>Please eter your birth details in the space provided below.</p>
+
+            <div class="form-group">
+                <input type="text" class="Age" id="Age" name="Age">
+                <button id="RemainingAge" name="RemainingAge" class="bg-success">submit</button>
+            </div>
+
+            
+
+            <div class="form-group">
+                <input type="text" class="input-control disabled" id="txtDisplay" disabled placeholder="you have ">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+            <script>
+
+                let PresentAge = document.getElementById("Age");
+                let textDisplay = document.getElementById("txtDisplay");
+                let RemainingAge = document.getElementById("RemainingAge")
+
+
+                RemainingAge.addEventListener("click", countdown)
+                
+                function countdown(){
+
+                        let  PresentAge = Age.value;
+                        let  daysLeft = (90 - PresentAge) * 365;
+                        let  weeksLeft = (90 - PresentAge) * 52;
+                        let  monthsLeft= (90 - PresentAge) * 12;
+
+                      
+                        textDisplay.value = ("You have " + daysLeft + " days, " + weeksLeft + " weeks, and " + monthsLeft + " months left.");
+                     
+                    //  if(textDisplay.value < 90){
+                    //      alert("DisplayResult.value");
+                    //     else{
+                    //         textDisplay.value = "You have " + remainingWords + " words remaining"
+                    //     }
+                    // }
+
+                };
+
+            
+            </script>
+
+    
+</body>
+</html>
