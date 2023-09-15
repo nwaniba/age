@@ -1,16 +1,20 @@
-*{
-    box-sizing: border-box !important;
-}
 body{
     width: 70%;
-    height: 300px;
-    background-color: aquamarine;
+    background-image: url(7178.jpg);
+    background-position: right;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    padding: 50px;
 }
-
 button{
     background-color: blueviolet;
 }
-.input-control{
-    width: 40%;
-    min-height: 70px;
+.form-group{
+    width: 50%;
+    height: 40px;   
+}
+ #txtDisplay{
+    padding: 70px;
+    width: 70%;
 }
